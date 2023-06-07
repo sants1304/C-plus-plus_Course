@@ -13,7 +13,7 @@ int main(){
 
     precio_con_impuesto = precio_sin_impuesto * (1+iva);
 
-    cout<<"El precio con IVA aplicado es: "<<precio_con_impuesto<<endl;
+    cout<<"\nEl precio con IVA aplicado es: "<<precio_con_impuesto<<endl;
 
 
 
