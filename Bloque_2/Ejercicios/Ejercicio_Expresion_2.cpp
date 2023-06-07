@@ -13,6 +13,7 @@ int main (){
 
     resultado = (num_1 + num_2)/(num_3 + num_4);
 
+    cout.precision(2);
     cout<<"\nEl resultado es: "<<resultado<<endl;
 
 
