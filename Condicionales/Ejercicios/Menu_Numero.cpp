@@ -6,16 +6,16 @@ using namespace std;
 int main(){
 
     int num_1, cubo = 0;
-    int opcion;
+    int option;
     
     cout<<"\tSelecciona alguna de las siguientes opciones: "<<endl;
     cout<<"1. Cubo del numero"<<endl;
     cout<<"2. Numero par o impar"<<endl;
     cout<<"3. Salir"<<endl;
 
-    cout<<"Opcion: ";cin>>opcion;
+    cout<<"Opcion: ";cin>>option;
 
-    switch(opcion){
+    switch(option){
         case 1:
             cout<<"Digite un numero entero: ";cin>>num_1;
             cubo = pow(num_1,3);
