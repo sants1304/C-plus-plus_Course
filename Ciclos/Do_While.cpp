@@ -22,5 +22,6 @@ int main(){
     } while(i >= 10);
 
     system("pause");
+    
     return 0;
 }
