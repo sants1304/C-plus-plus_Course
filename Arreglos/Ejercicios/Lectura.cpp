@@ -1,28 +1,31 @@
 #include<iostream>
 #include<stdlib.h>
+#include<vector>
 
 using namespace std;
 
 int main(){
     
-    int numeros[100], n;
+    int n, suma = 0, multiplicacion = 1, num;
+    vector <int> numeros;
 
-    cout<<"Digite el numero de elementos que va a tener el arreglo: "; cin>>n;
-
-    for (int i = 0; i < n; i++){
-        cout<<"Digite un numero: "; cin>>numeros[i];
-    }
+    cout<<"Ingrese el numero de elementos del vector: "; cin>>n;
 
     for (int i = 0; i < n; i++){
-        cout<<"\nIndice: "<<i<<", Numero: "<<numeros[i];
+        cout<<"Ingrese un numero: "; cin>>num;
+        numeros.push_back(num);
     }
 
-    cout<<"\n";
-    
-    for (int i = (n - 1); i >= 0; i--){
-        cout<<"\nIndice: "<<i<<", Numero: "<<numeros[i];
+    cout<<"\nOrden ascendente: "<<endl;
+    for (int i = 0; i < numeros.size(); i++){
+        cout<<"Elemento del indice "<<i<<" = "<<numeros.at(i)<<endl;
     }
-    
+
+    cout<<"\nOrden descendente: "<<endl;
+    for (int i = (numeros.size()-1); i >= 0; i--){
+        cout<<"Elemento del indice "<<i<<" = "<<numeros.at(i)<<endl;
+    }
+
     cout<<"\n";
 
     system("pause");

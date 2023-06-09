@@ -1,23 +1,25 @@
 #include<iostream>
 #include<stdlib.h>
+#include<vector>
 
 using namespace std;
 
 int main(){
     
-    int suma = 0, multiplicacion = 1;
-    int numero[] = {1,2,3,4,5};
+    int n, num, suma = 0, multiplicacion = 1;
+    vector<int> numeros;
 
-    for (int i = 0; i < 5; i++){
-        suma += numero [i];
+    cout<<"Ingrese el numero de elementos: "; cin>>n;
+
+    for(int i = 0; i < n; i++){
+        cout<<"Introduzca un numero: "; cin>>num;
+        numeros.push_back(num);
+        suma += num;
+        multiplicacion *= num;
     }
 
-    for (int i = 0; i < 5; i++){
-        multiplicacion *= numero[i];
-    }
-
-    cout<<"La suma de los numeros es: "<<suma<<endl;
-    cout<<"La multiplicacion de los numeros es: "<<multiplicacion<<endl;
+    cout<<"\nLa suma de los elementos es: "<<suma;
+    cout<<"\nLa multiplicacion de los elemetos es: "<<multiplicacion<<endl;
     
     system("pause");
     return 0;
