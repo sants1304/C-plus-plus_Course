@@ -1,7 +1,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<string.h>  
-//Cadena caracteres. https://cplusplus.com/reference/cstring/
+//Cadena caracteres. https://es.wikipedia.org/wiki/String.h
 
 using namespace std;
 
