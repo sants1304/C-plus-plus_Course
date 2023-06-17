@@ -24,6 +24,7 @@ void pedirDatos(){
 }
 
 void parteDecimal(double x){
-    double fraccionaria = modf(x, &fraccionaria);
-    cout<<"La parte decimal es: "<<fraccionaria<<endl;
+    double parteEntera;
+    double parteFraccionaria = modf(x, &parteEntera);
+    cout<<"La parte decimal es: "<<parteFraccionaria<<endl;
 }
